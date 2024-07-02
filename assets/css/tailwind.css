@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --archivo: "Archivo", sans-serif;
+    --tenor-sans: "Tenor Sans", sans-serif;
+}
+
+html, body, #__nuxt {
+    @apply font-tenor-sans text-neutral-900 scroll-smooth antialiased relative bg-gradient-to-r from-rose-100 to-teal-100;
+    scroll-snap-type: y mandatory;
+}
+
+#__nuxt main, #__nuxt section {
+ scroll-snap-align: start;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply font-archivo font-semibold text-neutral-800;
+}
+
+.text-gradient {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-purple-600;
+}
